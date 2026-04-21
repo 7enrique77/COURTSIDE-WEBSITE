@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest: #1b3a28;
+  --forest-dark: #0f2318;
+  --forest-light: #2c5e3a;
+  --cream: #f2ede3;
+  --cream-dark: #e6dfd1;
+  --olive: #b8bc6a;
+  --olive-dark: #9a9e52;
+  --warm-white: #faf7f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--warm-white);
+  color: var(--forest-dark);
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* ─── Typography helpers ─── */
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-script {
+  font-family: var(--font-great-vibes), cursive;
+}
+
+.font-body {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.font-sans-light {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 300;
+}
+
+/* ─── Divider line ─── */
+.divider-olive {
+  width: 60px;
+  height: 1px;
+  background: var(--olive);
+  margin: 0 auto;
+}
+
+/* ─── Scroll reveal animation ─── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.fade-up-delay-1 { animation-delay: 0.1s; }
+.fade-up-delay-2 { animation-delay: 0.22s; }
+.fade-up-delay-3 { animation-delay: 0.34s; }
+.fade-up-delay-4 { animation-delay: 0.46s; }
+
+/* ─── Hover underline effect ─── */
+.nav-link {
+  position: relative;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--cream);
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--olive);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link-dark {
+  color: var(--forest-dark);
+}
+
+.nav-link-dark::after {
+  background: var(--forest);
+}
+
+/* ─── CTA buttons ─── */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 40px;
+  min-width: 220px;
+  text-align: center;
+  border: 1px solid var(--olive);
+  color: var(--olive);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 400;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--olive);
+  color: var(--forest-dark);
+}
+
+.btn-dark {
+  display: inline-block;
+  padding: 14px 40px;
+  min-width: 220px;
+  text-align: center;
+  border: 1px solid var(--forest);
+  color: var(--forest);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 400;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-dark:hover {
+  background: var(--forest);
+  color: var(--cream);
+}
+
+.btn-cream {
+  display: inline-block;
+  padding: 14px 40px;
+  min-width: 220px;
+  text-align: center;
+  border: 1px solid var(--cream);
+  color: var(--cream);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 400;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-cream:hover {
+  background: var(--cream);
+  color: var(--forest-dark);
+}
+
+/* ─── Section label ─── */
+.section-label {
+  font-family: var(--font-jost), system-ui, sans-serif;
+  font-weight: 300;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+
+/* ─── Tennis court line decorations ─── */
+.court-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--forest);
+}
