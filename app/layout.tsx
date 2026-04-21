@@ -30,13 +30,34 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Courtside Vending — Elevating the Court Experience",
+  title: "Courtside Vending | Tennis Ball & Accessory Vending Machines",
   description:
-    "Premium vending solutions for tennis facilities. Tennis balls, hydration, and more — always courtside.",
+    "Courtside Vending places premium vending machines at tennis courts and clubs — stocked with tennis balls and accessories, available 24/7. Partner with us today.",
+  keywords: [
+    "courtside vending",
+    "tennis vending machine",
+    "tennis ball vending",
+    "tennis court vending",
+    "tennis accessories vending",
+    "vending machine tennis club",
+  ],
+  metadataBase: new URL("https://courtsidevend.com"),
+  alternates: {
+    canonical: "https://courtsidevend.com",
+  },
   openGraph: {
-    title: "Courtside Vending",
-    description: "Premium vending solutions for tennis facilities.",
+    title: "Courtside Vending | Tennis Ball & Accessory Vending Machines",
+    description:
+      "Premium vending machines at tennis courts — stocked with tennis balls and accessories, available 24/7.",
+    url: "https://courtsidevend.com",
+    siteName: "Courtside Vending",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Courtside Vending | Tennis Ball & Accessory Vending Machines",
+    description:
+      "Premium vending machines at tennis courts — stocked with tennis balls and accessories, available 24/7.",
   },
 };
 
