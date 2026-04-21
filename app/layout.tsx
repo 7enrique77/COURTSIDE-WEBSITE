@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Cormorant_Garamond, Great_Vibes, Jost } from "next/font/google";
 import "./globals.css";
 
@@ -28,6 +28,11 @@ const jost = Jost({
   variable: "--font-jost",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Courtside Vending | Tennis Ball & Accessory Vending Machines",

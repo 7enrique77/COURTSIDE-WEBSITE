@@ -65,7 +65,7 @@ function Navbar() {
         </div>
 
         {/* CTA */}
-        <a href="#contact" className="hidden md:block btn-primary text-xs">
+        <a href="#contact" className="hidden md:inline-block btn-primary text-xs">
           Get In Touch
         </a>
 
@@ -125,10 +125,10 @@ function Hero() {
         <p className="section-label text-olive mb-6 fade-up">Est. Miami, FL</p>
 
         <h1 className="font-display text-cream mb-2 leading-none fade-up fade-up-delay-1">
-          <span className="block text-6xl md:text-8xl lg:text-9xl tracking-widest2 uppercase">
+          <span className="block text-5xl sm:text-6xl md:text-8xl lg:text-9xl tracking-widest uppercase">
             Courtside
           </span>
-          <span className="font-script text-olive text-7xl md:text-9xl lg:text-[8rem] leading-tight block">
+          <span className="font-script text-olive text-6xl sm:text-7xl md:text-9xl lg:text-[8rem] leading-tight block">
             Vending
           </span>
         </h1>
