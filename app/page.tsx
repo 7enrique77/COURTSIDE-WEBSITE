@@ -65,9 +65,9 @@ function Navbar() {
         </div>
 
         {/* CTA */}
-        <a href="#contact" className="hidden md:inline-block btn-primary text-xs">
-          Get In Touch
-        </a>
+        <div className="hidden md:block">
+          <a href="#contact" className="btn-primary text-xs">Get In Touch</a>
+        </div>
 
         {/* Mobile hamburger */}
         <button
